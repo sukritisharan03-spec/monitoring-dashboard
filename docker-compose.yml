@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./backend/monitoring-dashboard-backend
+    ports:
+      - "9090:9090"
+
+  frontend:
+    build: .
+    ports:
+      - "5173:5173"
