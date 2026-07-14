@@ -41,8 +41,7 @@ function App() {
   useEffect(() => {
 
     const fetchData = () => {
-
-fetch("http://localhost:9090/api/dashboard")
+fetch("/api/dashboard")
         .then((res)=>res.json())
         .then((data)=>{
 
